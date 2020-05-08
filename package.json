@@ -1,0 +1,39 @@
+{
+    "name": "oddment",
+    "version": "0.0.1",
+    "description": "oddment for variable requirement",
+    "files": [
+        "build"
+    ],
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "scripts": {
+        "test": "mocha -r ts-node/register test/*.test.ts",
+        "build": "rm -rf ./build && tsc -p tsconfig.prod.json",
+        "doc": "rm -rf ./doc && npx typedoc --module commonjs --target es5 --experimentalDecorators --plugin typedoc-plugin-markdown --out ./doc ./index.ts",
+        "pub": "npm version patch && git push && npm publish --registry http://172.16.0.132:18081/repository/npm-lab/"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.2.11",
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^10.5.5",
+        "chai": "^4.2.0",
+        "mocha": "^7.1.2",
+        "ts-node": "^8.3.0",
+        "tslib": "^1.8.1",
+        "tslint": "^5.11.0",
+        "tslint-midway-contrib": "1",
+        "typedoc": "^0.15.6",
+        "typedoc-plugin-markdown": "^2.2.16",
+        "typescript": "^3.5.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "oddment"
+    ],
+    "repository": "git@github.com:youkaisteve/oddment.git",
+    "author": "youkaisteve",
+    "license": "MIT"
+}
