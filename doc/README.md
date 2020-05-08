@@ -1,6 +1,6 @@
-[oddment - v0.0.1](README.md) › [Globals](globals.md)
+[oddment - v0.0.2](README.md) › [Globals](globals.md)
 
-# oddment - v0.0.1
+# oddment - v0.0.2
 
 # oddment
 
@@ -11,7 +11,7 @@ const Cycler, { CyclerOption } = require('oddment/lib/cycler');
 const handler = function (item) {
     currentItem = item;
 };
-const option: CyclerOption = {
+const option = {
     handler: handler,
 };
 const cycler = new Cycler(items, option);
