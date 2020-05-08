@@ -8,7 +8,7 @@
         "test": "mocha -r ts-node/register test/*.test.ts",
         "build": "rm -rf ./build && tsc -p tsconfig.prod.json",
         "doc": "rm -rf ./doc && npx typedoc --module commonjs --target es5 --experimentalDecorators --plugin typedoc-plugin-markdown --out ./doc ./lib",
-        "pub": "npm version patch && git push && cp package.json ./build/ && npm publish"
+        "pub": "npm version patch && git push && cp package.json ./build/ && cd build && npm publish && cd .."
     },
     "devDependencies": {
         "@types/chai": "^4.2.11",
