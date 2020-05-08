@@ -1,5 +1,13 @@
 # oddment
 
+## Install
+
+```bash
+npm install oddment --save
+# or
+yarn add oddment
+```
+
 ## Cycler
 
 循环处理器，用来实现间隔处理一组数据的需求，支持同步处理和异步处理
