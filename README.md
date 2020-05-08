@@ -2,6 +2,12 @@
 
 ## Cycler
 
+循环处理器，用来实现间隔处理一组数据的需求，支持同步处理和异步处理
+
+### 用法
+
+**Sync**
+
 ```javascript
 const Cycler = require('oddment/lib/cycler').default;
 
@@ -14,36 +20,33 @@ const option = {
 };
 const cycler = new Cycler(items, option);
 cycler.start();
-
-// pause
-setTimeout(() => {
-    cycler.pause();
-}, 3000);
-
-// resume
-setTimeout(() => {
-    cycler.resume();
-}, 5000);
-
-// stop
-setTimeout(() => {
-    cycler.stop();
-}, 10000);
 ```
 
-**stdout**
+**Async**
 
-```bash
-============>start
-1
-2
-3
-============>pause
-============>resume
-4
-5
-1
-2
-3
-============>stop
+```javascript
+const Cycler = require('oddment/lib/cycler').default;
+
+const asyncHandler = function (item) {
+    console.log(item);
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, 1000);
+    });
+};
+const items = [1, 2, 3, 4, 5];
+const option = {
+    handler: asyncHandler,
+};
+const cycler = new Cycler(items, option);
+cycler.start();
 ```
+
+### 选项(option)
+
+| 名称       | 类型     | 默认值 | 备注                             |
+| ---------- | -------- | ------ | -------------------------------- |
+| interval   | number   | 1000   | 间隔，毫秒，默认为 1000          |
+| handler    | Function | 1000   | 处理队列中对象的函数，必填       |
+| cycleTimes | number   | 0      | 循环次数，默认为 0，表示无限循环 |
