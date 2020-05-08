@@ -3,7 +3,7 @@
     "version": "0.0.2",
     "description": "oddment for variable requirement",
     "files": [
-        "build"
+        "build/*"
     ],
     "main": "build/index.js",
     "types": "build/index.d.ts",
