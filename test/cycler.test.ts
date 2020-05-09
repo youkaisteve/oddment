@@ -3,6 +3,7 @@ import { expect } from 'chai';
 
 let currentItem;
 const handler = function (item) {
+    console.log(item);
     currentItem = item;
 };
 
@@ -36,6 +37,26 @@ describe('Cycler', () => {
         const cycler = new Cycler(items, option);
         await cycler.start();
         expect(currentItem).to.equal(items[9]);
+    }).timeout(20000);
+
+    it('Normal start - add item', (done) => {
+        const option: CyclerOption = {
+            handler: handler,
+            cycleTimes: 1,
+        };
+        const cycler = new Cycler(items, option);
+        setTimeout(() => {
+            cycler.add(55, 5);
+            cycler.add(22, 2);
+        }, 4000);
+        setTimeout(() => {
+            cycler.stop();
+            expect(items[6]).to.equal(55);
+            // 因为中间插入了一个55，所以10秒的时候只轮训到了倒数第二个90，目前有12个item，倒数第二个的下标是10
+            expect(currentItem).to.equal(items[10]);
+            done();
+        }, 10000);
+        cycler.start();
     }).timeout(20000);
 
     it('Async start', function (done) {
