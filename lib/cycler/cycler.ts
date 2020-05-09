@@ -37,6 +37,7 @@ export default class Cycler {
     async start(pos?: number) {
         if (this.started === true) {
             console.warn('Cycler already started, you may want to resume(Cycler.resume())?');
+            return;
         }
         this.started = true;
         this.currentPos = pos || 0;
@@ -55,6 +56,14 @@ export default class Cycler {
      * 恢复
      */
     async resume() {
+        if (this.started === false) {
+            console.warn('Cycler does not start, you may start(Cycler.start()) it first.');
+            return;
+        }
+        if (this.status === 1) {
+            console.warn('Cycler is running, you may pause(Cycler.pause()) it first.');
+            return;
+        }
         this.status = 1;
         await this[NEXT]();
     }
