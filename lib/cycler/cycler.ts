@@ -69,13 +69,24 @@ export default class Cycler {
     }
 
     /**
-     * 停止
+     * 停止，等同于释放资源，当不再使用的时候，务必调用一次该方法
      */
     stop() {
         this.started = false;
         this.status = 0;
         this.currentPos = 0;
         this.cycleTimes = 0;
+    }
+
+    /**
+     * 重置Cycler，停止循环
+     * @param items 重置的数据,非必填，如果没有值，效果等同于stop
+     */
+    reset(items?: Array<any>) {
+        if (items && items.length > 0) {
+            this.items = items;
+        }
+        this.stop();
     }
 
     /**
