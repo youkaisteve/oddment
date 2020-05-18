@@ -1,4 +1,4 @@
-[oddment - v0.0.9](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
+[oddment - v0.0.10](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
 
 # External module: "index"
 

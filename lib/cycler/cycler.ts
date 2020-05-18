@@ -72,9 +72,7 @@ export default class Cycler {
      * 停止，等同于释放资源，当不再使用的时候，务必调用一次该方法
      */
     stop() {
-        if (this.timer) {
-            clearTimeout(this.timer);
-        }
+        this.clearTimer();
         this.started = false;
         this.status = 0;
         this.currentPos = 0;
@@ -117,15 +115,21 @@ export default class Cycler {
      * 模拟sleep
      * @param millions 毫秒
      */
-    sleep(millions) {
+    private sleep(millions) {
         return new Promise((resolve) => {
-            if (this.timer) {
-                clearTimeout(this.timer);
-            }
+            this.clearTimer();
             this.timer = setTimeout(resolve, millions);
         });
     }
 
+    /**
+     * 清空时钟
+     */
+    private clearTimer() {
+        if (this.timer) {
+            clearTimeout(this.timer);
+        }
+    }
     async [NEXT]() {
         if (this.status === 0) {
             return;
