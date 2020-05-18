@@ -1,4 +1,4 @@
-[oddment - v0.0.6](../README.md) › [Globals](../globals.md) › ["lib/cycler/cycler_option"](../modules/_lib_cycler_cycler_option_.md) › [CyclerOption](_lib_cycler_cycler_option_.cycleroption.md)
+[oddment - v0.0.7](../README.md) › [Globals](../globals.md) › ["lib/cycler/cycler_option"](../modules/_lib_cycler_cycler_option_.md) › [CyclerOption](_lib_cycler_cycler_option_.cycleroption.md)
 
 # Interface: CyclerOption
 
@@ -20,7 +20,7 @@
 
 • **cycleTimes**? : *number*
 
-*Defined in [lib/cycler/cycler_option.ts:13](https://github.com/youkaisteve/oddment/blob/c5e52f1/lib/cycler/cycler_option.ts#L13)*
+*Defined in [lib/cycler/cycler_option.ts:13](https://github.com/youkaisteve/oddment/blob/c837f1d/lib/cycler/cycler_option.ts#L13)*
 
 循环次数，默认为0，表示无限循环
 
@@ -30,7 +30,7 @@ ___
 
 • **handler**: *Function*
 
-*Defined in [lib/cycler/cycler_option.ts:9](https://github.com/youkaisteve/oddment/blob/c5e52f1/lib/cycler/cycler_option.ts#L9)*
+*Defined in [lib/cycler/cycler_option.ts:9](https://github.com/youkaisteve/oddment/blob/c837f1d/lib/cycler/cycler_option.ts#L9)*
 
 处理队列中对象的函数
 
@@ -40,6 +40,6 @@ ___
 
 • **interval**? : *number*
 
-*Defined in [lib/cycler/cycler_option.ts:5](https://github.com/youkaisteve/oddment/blob/c5e52f1/lib/cycler/cycler_option.ts#L5)*
+*Defined in [lib/cycler/cycler_option.ts:5](https://github.com/youkaisteve/oddment/blob/c837f1d/lib/cycler/cycler_option.ts#L5)*
 
 间隔，毫秒，默认为1000，
