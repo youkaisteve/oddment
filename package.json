@@ -6,10 +6,23 @@
     "types": "index.d.ts",
     "scripts": {
         "test": "mocha -r ts-node/register test/*.test.ts",
+        "commit": "git cz",
+        "lint": "tslint -p tsconfig.prod.json",
         "build": "rm -rf ./build && tsc -p tsconfig.prod.json",
         "doc": "rm -rf ./doc && npx typedoc --module commonjs --target es5 --experimentalDecorators --plugin typedoc-plugin-markdown --out ./doc ./index.ts",
         "pub": "npm version patch && git push && cp package.json ./build/ && cp README.md ./build/ && cd build && npm publish && cd ..",
         "release": "standard-version"
+    },
+    "standard-version": {
+        "skip": {
+            "tag": true
+        }
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -e $GIT_PARAMS",
+            "pre-commit": "npm run lint"
+        }
     },
     "devDependencies": {
         "@commitlint/cli": "^8.3.5",
