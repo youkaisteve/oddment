@@ -3,24 +3,24 @@ import { CyclerOption } from './cycler_option';
 const NEXT = Symbol('Cycler#Next');
 
 export default class Cycler {
-    items: Array<any>;
+    items: [];
     options: CyclerOption;
     timer: any;
-    currentPos: number = 0;
+    currentPos: number;
     /**
      * 状态: 0-停止;1-进行中；
      */
-    status: number = 0;
+    status: number;
     /**
      * 循环次数
      */
-    cycleTimes: number = 0;
+    cycleTimes: number;
     /**
      * 已经开始了
      */
-    started: Boolean = false;
+    started: boolean;
 
-    constructor(items: Array<any>, options: CyclerOption) {
+    constructor(items: [], options: CyclerOption) {
         this.items = items;
         if (!options.handler) {
             throw new Error('options.handler is required');
@@ -83,7 +83,7 @@ export default class Cycler {
      * 重置Cycler，停止循环
      * @param items 重置的数据,非必填，如果没有值，效果等同于stop
      */
-    reset(items?: Array<any>) {
+    reset(items?: []) {
         if (items && items.length > 0) {
             this.items = items;
         }
