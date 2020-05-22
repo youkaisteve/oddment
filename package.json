@@ -10,7 +10,7 @@
         "lint": "tslint -p tsconfig.prod.json",
         "build": "rm -rf ./build && tsc -p tsconfig.prod.json",
         "doc": "rm -rf ./doc && npx typedoc --module commonjs --target es5 --experimentalDecorators --plugin typedoc-plugin-markdown --out ./doc ./index.ts",
-        "pub": "standard-version && git push --follow-tags && cp package.json ./build/ && cp README.md ./build/ && cd build && npm publish && cd ..",
+        "pub": "npm run build && standard-version && git push --follow-tags && cp package.json ./build/ && cp README.md ./build/ && cd build && npm publish && cd ..",
         "release": "standard-version"
     },
     "standard-version": {
