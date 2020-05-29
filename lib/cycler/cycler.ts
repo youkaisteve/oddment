@@ -3,7 +3,7 @@ import { CyclerOption } from './cycler_option';
 const NEXT = Symbol('Cycler#Next');
 
 export default class Cycler {
-    items: [];
+    items: any[];
     options: CyclerOption;
     timer: any;
     currentPos: number;

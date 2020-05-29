@@ -6,7 +6,7 @@ export interface CyclerOption {
     /**
      * 处理队列中对象的函数
      */
-    handler: () => void;
+    handler: (any?) => any;
     /**
      * 循环次数，默认为0，表示无限循环
      */
