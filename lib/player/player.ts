@@ -4,7 +4,7 @@ import { PlayerOption } from './player_option';
 export default class Player {
     private context: PlayerContext;
     private timer: any;
-    private speedIndex: number = 0;
+    private speedIndex = 0;
     private playerOption: PlayerOption;
 
     constructor(playerOption: PlayerOption) {
