@@ -20,7 +20,7 @@ export default class Cycler {
      */
     started: boolean;
 
-    constructor(items: [], options: CyclerOption) {
+    constructor(items: any[], options: CyclerOption) {
         this.items = items;
         if (!options.handler) {
             throw new Error('options.handler is required');
@@ -83,7 +83,7 @@ export default class Cycler {
      * 重置Cycler，停止循环
      * @param items 重置的数据,非必填，如果没有值，效果等同于stop
      */
-    reset(items?: []) {
+    reset(items?: any[]) {
         if (items && items.length > 0) {
             this.items = items;
         }
