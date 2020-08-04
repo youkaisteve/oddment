@@ -69,6 +69,7 @@ export default class Player {
      */
     speedUp() {
         if (this.speedIndex === this.context.speedList.length - 1) {
+            console.warn('player is playing at top speed, then resume speed to default');
             this.speedIndex = 0;
         } else {
             this.speedIndex++;
