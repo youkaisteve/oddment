@@ -15,7 +15,7 @@ export default interface PlayerContext {
      */
     total: number;
     /**
-     * 当前播放速度，默认为1，即每秒播放一次；若为负数，则表示为快退
+     * 当前播放速度，默认为1，即每秒播放一次；
      */
     speed: number;
     /**

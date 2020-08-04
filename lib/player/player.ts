@@ -62,14 +62,14 @@ export default class Player {
         clearInterval(this.timer);
         this.context.status = 0;
         this.context.current = 0;
+        this.speedIndex = 0;
     }
     /**
      * 加速
      */
     speedUp() {
         if (this.speedIndex === this.context.speedList.length - 1) {
-            console.warn('player is playing at top speed');
-            return;
+            this.speedIndex = 0;
         }
         this.speedIndex++;
         this.context.speed = this.context.speedList[this.speedIndex];
