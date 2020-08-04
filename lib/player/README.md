@@ -32,7 +32,7 @@ player.start();
 开始播放
 
 ```js
-player.start(pos)
+player.start()
 ```
 
 ### pause
