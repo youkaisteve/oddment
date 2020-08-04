@@ -1,6 +1,6 @@
 {
     "name": "oddment",
-    "version": "0.0.17",
+    "version": "0.0.18",
     "description": "oddment for variable requirement",
     "main": "index.js",
     "types": "index.d.ts",
@@ -12,11 +12,6 @@
         "doc": "rm -rf ./doc && npx typedoc --module commonjs --target es5 --experimentalDecorators --plugin typedoc-plugin-markdown --out ./doc ./index.ts",
         "pub": "npm run build && standard-version && git push --follow-tags && cp package.json ./build/ && cp README.md ./build/ && cd build && npm publish && cd ..",
         "release": "standard-version"
-    },
-    "standard-version": {
-        "skip": {
-            "tag": true
-        }
     },
     "husky": {
         "hooks": {
