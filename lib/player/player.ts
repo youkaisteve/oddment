@@ -70,8 +70,9 @@ export default class Player {
     speedUp() {
         if (this.speedIndex === this.context.speedList.length - 1) {
             this.speedIndex = 0;
+        } else {
+            this.speedIndex++;
         }
-        this.speedIndex++;
         this.context.speed = this.context.speedList[this.speedIndex];
     }
     /**
