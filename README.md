@@ -9,3 +9,4 @@ yarn add oddment
 ```
 
 ## [Cycler](./lib/cycler/README.md)
+## [Player](./lib/player/README.md)
