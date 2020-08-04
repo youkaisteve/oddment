@@ -1,3 +1,12 @@
+## [0.0.20](https://github.com/youkaisteve/oddment/compare/v0.0.18...v0.0.20) (2020-08-04)
+
+
+### Bug Fixes
+
+* **player:** speedup:resume to default speed while coming up to top ([3db1a37](https://github.com/youkaisteve/oddment/commit/3db1a377ffeada9231397299b9967633873f7854))
+
+
+
 ## [0.0.17](https://github.com/youkaisteve/oddment/compare/v0.0.18...v0.0.17) (2020-08-04)
 
 
