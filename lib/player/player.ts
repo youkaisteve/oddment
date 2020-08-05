@@ -109,7 +109,7 @@ export default class Player {
             if (this.context.current === this.context.total) {
                 this.stop();
             }
-            this.context.current++;
+            this.context.current += this.context.speed;
             this.handleContent();
         }, this.context.speed * this.context.interval * 1000);
     }
