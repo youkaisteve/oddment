@@ -1,4 +1,4 @@
-[oddment - v0.0.17](../README.md) › [Globals](../globals.md) › ["lib/cycler/cycler_option"](_lib_cycler_cycler_option_.md)
+[oddment - v0.0.21](../README.md) › [Globals](../globals.md) › ["lib/cycler/cycler_option"](_lib_cycler_cycler_option_.md)
 
 # External module: "lib/cycler/cycler_option"
 

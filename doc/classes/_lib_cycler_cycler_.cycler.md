@@ -1,4 +1,4 @@
-[oddment - v0.0.17](../README.md) › [Globals](../globals.md) › ["lib/cycler/cycler"](../modules/_lib_cycler_cycler_.md) › [Cycler](_lib_cycler_cycler_.cycler.md)
+[oddment - v0.0.21](../README.md) › [Globals](../globals.md) › ["lib/cycler/cycler"](../modules/_lib_cycler_cycler_.md) › [Cycler](_lib_cycler_cycler_.cycler.md)
 
 # Class: Cycler
 
@@ -40,7 +40,7 @@
 
 \+ **new Cycler**(`items`: any[], `options`: [CyclerOption](../interfaces/_lib_cycler_cycler_option_.cycleroption.md)): *[Cycler](_lib_cycler_cycler_.cycler.md)*
 
-*Defined in [lib/cycler/cycler.ts:21](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L21)*
+*Defined in [lib/cycler/cycler.ts:21](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L21)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ Name | Type |
 
 • **currentPos**: *number*
 
-*Defined in [lib/cycler/cycler.ts:9](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L9)*
+*Defined in [lib/cycler/cycler.ts:9](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L9)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **cycleTimes**: *number*
 
-*Defined in [lib/cycler/cycler.ts:17](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L17)*
+*Defined in [lib/cycler/cycler.ts:17](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L17)*
 
 循环次数
 
@@ -75,7 +75,7 @@ ___
 
 • **items**: *any[]*
 
-*Defined in [lib/cycler/cycler.ts:6](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L6)*
+*Defined in [lib/cycler/cycler.ts:6](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L6)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **options**: *[CyclerOption](../interfaces/_lib_cycler_cycler_option_.cycleroption.md)*
 
-*Defined in [lib/cycler/cycler.ts:7](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L7)*
+*Defined in [lib/cycler/cycler.ts:7](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L7)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **started**: *boolean*
 
-*Defined in [lib/cycler/cycler.ts:21](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L21)*
+*Defined in [lib/cycler/cycler.ts:21](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L21)*
 
 已经开始了
 
@@ -101,7 +101,7 @@ ___
 
 • **status**: *number*
 
-*Defined in [lib/cycler/cycler.ts:13](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L13)*
+*Defined in [lib/cycler/cycler.ts:13](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L13)*
 
 状态: 0-停止;1-进行中；
 
@@ -111,7 +111,7 @@ ___
 
 • **timer**: *any*
 
-*Defined in [lib/cycler/cycler.ts:8](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L8)*
+*Defined in [lib/cycler/cycler.ts:8](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L8)*
 
 ## Methods
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **[NEXT]**(): *any*
 
-*Defined in [lib/cycler/cycler.ts:133](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L133)*
+*Defined in [lib/cycler/cycler.ts:133](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L133)*
 
 **Returns:** *any*
 
@@ -129,7 +129,7 @@ ___
 
 ▸ **add**(`item`: any, `pos?`: number): *void*
 
-*Defined in [lib/cycler/cycler.ts:98](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L98)*
+*Defined in [lib/cycler/cycler.ts:98](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L98)*
 
 将新的对象加入到循环队列中
 
@@ -148,7 +148,7 @@ ___
 
 ▸ **clearTimer**(): *void*
 
-*Defined in [lib/cycler/cycler.ts:128](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L128)*
+*Defined in [lib/cycler/cycler.ts:128](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L128)*
 
 清空时钟
 
@@ -160,7 +160,7 @@ ___
 
 ▸ **pause**(): *void*
 
-*Defined in [lib/cycler/cycler.ts:51](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L51)*
+*Defined in [lib/cycler/cycler.ts:51](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L51)*
 
 暂停
 
@@ -172,7 +172,7 @@ ___
 
 ▸ **reset**(`items?`: any[]): *void*
 
-*Defined in [lib/cycler/cycler.ts:86](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L86)*
+*Defined in [lib/cycler/cycler.ts:86](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L86)*
 
 重置Cycler，停止循环
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **resume**(): *Promise‹void›*
 
-*Defined in [lib/cycler/cycler.ts:58](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L58)*
+*Defined in [lib/cycler/cycler.ts:58](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L58)*
 
 恢复
 
@@ -202,7 +202,7 @@ ___
 
 ▸ **sleep**(`millions`: any): *Promise‹unknown›*
 
-*Defined in [lib/cycler/cycler.ts:118](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L118)*
+*Defined in [lib/cycler/cycler.ts:118](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L118)*
 
 模拟sleep
 
@@ -220,7 +220,7 @@ ___
 
 ▸ **start**(`pos?`: number): *Promise‹void›*
 
-*Defined in [lib/cycler/cycler.ts:37](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L37)*
+*Defined in [lib/cycler/cycler.ts:37](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L37)*
 
 开始
 
@@ -238,7 +238,7 @@ ___
 
 ▸ **stop**(): *void*
 
-*Defined in [lib/cycler/cycler.ts:74](https://github.com/youkaisteve/oddment/blob/2f3018c/lib/cycler/cycler.ts#L74)*
+*Defined in [lib/cycler/cycler.ts:74](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L74)*
 
 停止，等同于释放资源，当不再使用的时候，务必调用一次该方法
 
