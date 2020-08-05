@@ -25,7 +25,7 @@ player.start();
 | handler   | Function | undefined  | 处理队列中对象的函数，必填，该方法接受一个[PlayerContext](https://github.com/youkaisteve/oddment/blob/master/doc/interfaces/_lib_player_context_.playercontext.md)参数 |
 | total     | number   |            | 总时长(秒)                                                                                                                                                             |
 
-## [Methods](https://github.com/youkaisteve/oddment/blob/c22ae1e/doc/classes/_lib_player_player_.player.md#methods-1)
+## [Methods](https://github.com/youkaisteve/oddment/blob/master/doc/classes/_lib_player_player_.player.md#methods-1)
 
 ## Attention
 
