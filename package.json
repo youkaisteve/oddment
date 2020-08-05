@@ -9,7 +9,7 @@
         "commit": "git cz",
         "lint": "tslint -p tsconfig.prod.json",
         "build": "rm -rf ./build && tsc -p tsconfig.prod.json",
-        "doc": "rm -rf ./doc && npx typedoc --module commonjs --target es5 --experimentalDecorators --plugin typedoc-plugin-markdown --out ./doc ./index.ts",
+        "doc": "rm -rf ./doc && npx typedoc --module commonjs --target es5 --experimentalDecorators --plugin typedoc-plugin-markdown --out ./doc ./index.ts && git commit -am \"docs(api): update api doc\" && git push",
         "pub": "npm run build && standard-version && git push --follow-tags && cp package.json ./build/ && cp README.md ./build/ && cd build && npm publish && cd ..",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md && git commit -am \"docs(changelog): modify\" && git push",
         "release": "standard-version"
