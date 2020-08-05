@@ -26,3 +26,7 @@ player.start();
 | total     | number   |            | 总时长(秒)                                                                                                                                                             |
 
 ## [Methods](https://github.com/youkaisteve/oddment/blob/c22ae1e/doc/classes/_lib_player_player_.player.md#methods-1)
+
+## Attention
+
+Please stop player when you didn't use it.
