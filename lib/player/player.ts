@@ -72,11 +72,8 @@ export default class Player {
         clearInterval(this.timer);
         this.context.status = 0;
         this.context.current = 0;
-<<<<<<< HEAD
         this.speedIndex = 0;
-=======
         this.handleContent();
->>>>>>> feature-player
     }
     /**
      * 加速
