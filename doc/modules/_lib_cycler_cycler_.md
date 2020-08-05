@@ -18,4 +18,4 @@
 
 • **NEXT**: *unique symbol* =  Symbol('Cycler#Next')
 
-*Defined in [lib/cycler/cycler.ts:3](https://github.com/youkaisteve/oddment/blob/5e26528/lib/cycler/cycler.ts#L3)*
+*Defined in [lib/cycler/cycler.ts:3](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/cycler/cycler.ts#L3)*

@@ -36,7 +36,7 @@
 
 \+ **new Player**(`playerOption`: [PlayerOption](../interfaces/_lib_player_player_option_.playeroption.md)): *[Player](_lib_player_player_.player.md)*
 
-*Defined in [lib/player/player.ts:8](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L8)*
+*Defined in [lib/player/player.ts:8](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L8)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ Name | Type |
 
 • **context**: *[PlayerContext](../interfaces/_lib_player_context_.playercontext.md)*
 
-*Defined in [lib/player/player.ts:5](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L5)*
+*Defined in [lib/player/player.ts:5](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L5)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **playerOption**: *[PlayerOption](../interfaces/_lib_player_player_option_.playeroption.md)*
 
-*Defined in [lib/player/player.ts:8](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L8)*
+*Defined in [lib/player/player.ts:8](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L8)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **speedIndex**: *number* = 0
 
-*Defined in [lib/player/player.ts:7](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L7)*
+*Defined in [lib/player/player.ts:7](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L7)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **timer**: *any*
 
-*Defined in [lib/player/player.ts:6](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L6)*
+*Defined in [lib/player/player.ts:6](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L6)*
 
 ## Methods
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **handleContent**(): *void*
 
-*Defined in [lib/player/player.ts:117](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L117)*
+*Defined in [lib/player/player.ts:117](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L117)*
 
 **Returns:** *void*
 
@@ -94,7 +94,7 @@ ___
 
 ▸ **pause**(): *void*
 
-*Defined in [lib/player/player.ts:48](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L48)*
+*Defined in [lib/player/player.ts:48](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L48)*
 
 暂停
 
@@ -106,7 +106,7 @@ ___
 
 ▸ **play**(): *void*
 
-*Defined in [lib/player/player.ts:106](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L106)*
+*Defined in [lib/player/player.ts:106](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L106)*
 
 播放
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **resume**(): *void*
 
-*Defined in [lib/player/player.ts:60](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L60)*
+*Defined in [lib/player/player.ts:60](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L60)*
 
 恢复，暂停后使用
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **slowDown**(): *void*
 
-*Defined in [lib/player/player.ts:94](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L94)*
+*Defined in [lib/player/player.ts:94](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L94)*
 
 减速，最低减到一倍速，不能慢放
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **speedUp**(): *void*
 
-*Defined in [lib/player/player.ts:81](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L81)*
+*Defined in [lib/player/player.ts:81](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L81)*
 
 加速
 
@@ -154,7 +154,7 @@ ___
 
 ▸ **start**(`blocker`: function): *Promise‹void›*
 
-*Defined in [lib/player/player.ts:29](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L29)*
+*Defined in [lib/player/player.ts:29](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L29)*
 
 开始
 
@@ -174,7 +174,7 @@ ___
 
 ▸ **stop**(): *void*
 
-*Defined in [lib/player/player.ts:71](https://github.com/youkaisteve/oddment/blob/5e26528/lib/player/player.ts#L71)*
+*Defined in [lib/player/player.ts:71](https://github.com/youkaisteve/oddment/blob/c22ae1e/lib/player/player.ts#L71)*
 
 停止
 
