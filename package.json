@@ -1,6 +1,6 @@
 {
     "name": "oddment",
-    "version": "0.0.22",
+    "version": "0.0.23",
     "description": "oddment for variable requirement",
     "main": "index.js",
     "types": "index.d.ts",
