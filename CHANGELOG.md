@@ -1,3 +1,19 @@
+## [0.0.23](https://github.com/youkaisteve/oddment/compare/v0.0.18...v0.0.23) (2020-08-05)
+
+
+### Bug Fixes
+
+* **player:** speedup logic change ([69e4b16](https://github.com/youkaisteve/oddment/commit/69e4b16f84b0120ee2e8bcf61879008567ce4996))
+* **player:** speedup:resume to default speed while coming up to top ([3db1a37](https://github.com/youkaisteve/oddment/commit/3db1a377ffeada9231397299b9967633873f7854))
+
+
+### Features
+
+* **player:** after call methods, handle context to customer ([16fbaee](https://github.com/youkaisteve/oddment/commit/16fbaee7fe5bef8cb057a2e1f22eb71c047f3339))
+* **player:** changeOption ([00752a0](https://github.com/youkaisteve/oddment/commit/00752a0c15d787a2d1f990e9832476d3a31c8d6a))
+
+
+
 ## [0.0.22](https://github.com/youkaisteve/oddment/compare/v0.0.18...v0.0.22) (2020-08-05)
 
 
