@@ -7,26 +7,24 @@ export default class Player {
     private speedIndex = 0;
     private playerOption: PlayerOption;
 
-    constructor(playerOption: PlayerOption) {
-        if (!playerOption.handler) {
-            console.error('PlayerOption.handler must be provided');
-        }
-        this.playerOption = playerOption;
-        this.context = {
-            interval: playerOption.interval || 1,
-            current: 0,
-            total: playerOption.total,
-            speed: playerOption.speed || 1,
-            speedList: playerOption.speedList || [1, 4, 8, 16],
-            status: 0,
-        };
+    constructor(playerOption?: PlayerOption) {
+        this.setOption(playerOption);
+    }
+
+    /**
+     * 重新设置选项
+     * @param playerOption 选项
+     */
+    changeOption(playerOption: PlayerOption) {
+        clearInterval(this.timer);
+        this.setOption(playerOption);
     }
 
     /**
      * 开始
      * @param blocker 需要异步启动的业务，可设置blocker，待blocker返回true之后，才会真正启动，否则会停止
      */
-    async start(blocker: () => Promise<boolean>) {
+    async start(blocker?: () => Promise<boolean>) {
         if (this.context.status !== 0) {
             console.warn('player has already started');
             return;
@@ -34,7 +32,7 @@ export default class Player {
         this.context.status = 1;
         this.playerOption.handler(this.context);
 
-        const blockResult = await blocker();
+        const blockResult = blocker ? await blocker() : true;
         if (blockResult) {
             this.play();
         } else {
@@ -73,6 +71,7 @@ export default class Player {
         this.context.status = 0;
         this.context.current = 0;
         this.speedIndex = 0;
+        this.context.speed = this.context.speedList[this.speedIndex];
         this.handleContent();
     }
     /**
@@ -116,5 +115,24 @@ export default class Player {
 
     private handleContent() {
         this.playerOption.handler(this.context);
+    }
+
+    /**
+     * 设置选项
+     * @param playerOption
+     */
+    private setOption(playerOption: PlayerOption) {
+        if (!playerOption.handler) {
+            console.error('PlayerOption.handler must be provided');
+        }
+        this.playerOption = playerOption;
+        this.context = {
+            interval: playerOption.interval || 1,
+            current: 0,
+            total: playerOption.total,
+            speed: playerOption.speed || 1,
+            speedList: playerOption.speedList || [1, 4, 8, 16],
+            status: 0,
+        };
     }
 }

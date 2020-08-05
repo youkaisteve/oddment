@@ -16,8 +16,8 @@ describe('Player', () => {
         };
         const player = new Player(option);
         setTimeout(() => {
-            player.stop();
             expect(context_copy.current).to.equal(5);
+            player.stop();
             expect(context.status).to.equal(0);
             done();
         }, 5020);
