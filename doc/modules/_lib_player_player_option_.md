@@ -1,4 +1,4 @@
-[oddment - v0.0.23](../README.md) › [Globals](../globals.md) › ["lib/player/player_option"](_lib_player_player_option_.md)
+[oddment - v0.0.25](../README.md) › [Globals](../globals.md) › ["lib/player/player_option"](_lib_player_player_option_.md)
 
 # External module: "lib/player/player_option"
 
