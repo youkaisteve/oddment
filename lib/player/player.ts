@@ -109,12 +109,16 @@ export default class Player {
             } else {
                 this.context.current += this.context.speed;
             }
-            this.handleContext();
+            this.handleContext({ isPlay: true });
         }, this.context.speed * this.context.interval * 1000);
     }
 
-    private handleContext() {
-        this.playerOption.handler(this.context);
+    private handleContext(extend?: object) {
+        if (extend) {
+            this.playerOption.handler(Object.assign(this.context, extend));
+        } else {
+            this.playerOption.handler(this.context);
+        }
     }
 
     /**
