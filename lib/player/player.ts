@@ -50,7 +50,7 @@ export default class Player {
         }
         clearInterval(this.timer);
         this.context.status = 2;
-        this.handleContent();
+        this.handleContext();
     }
     /**
      * 恢复，暂停后使用
@@ -68,11 +68,8 @@ export default class Player {
      */
     stop() {
         clearInterval(this.timer);
-        this.context.status = 0;
-        this.context.current = 0;
-        this.speedIndex = 0;
-        this.context.speed = this.context.speedList[this.speedIndex];
-        this.handleContent();
+        this.resetContext();
+        this.handleContext();
     }
     /**
      * 加速
@@ -85,7 +82,6 @@ export default class Player {
             this.speedIndex++;
         }
         this.context.speed = this.context.speedList[this.speedIndex];
-        this.handleContent();
     }
     /**
      * 减速，最低减到一倍速，不能慢放
@@ -97,7 +93,6 @@ export default class Player {
         }
         this.speedIndex--;
         this.context.speed = this.context.speedList[this.speedIndex];
-        this.handleContent();
     }
     /**
      * 播放
@@ -106,18 +101,19 @@ export default class Player {
         clearInterval(this.timer);
         this.timer = setInterval(() => {
             if (this.context.current === this.context.total) {
-                this.stop();
+                this.resetContext();
+                return;
             }
             if (this.context.current + this.context.speed >= this.context.total) {
                 this.context.current = this.context.total;
             } else {
                 this.context.current += this.context.speed;
             }
-            this.handleContent();
+            this.handleContext();
         }, this.context.speed * this.context.interval * 1000);
     }
 
-    private handleContent() {
+    private handleContext() {
         this.playerOption.handler(this.context);
     }
 
@@ -138,5 +134,12 @@ export default class Player {
             speedList: playerOption.speedList || [1, 4, 8, 16],
             status: 0,
         };
+    }
+
+    private resetContext() {
+        this.context.status = 0;
+        this.context.current = 0;
+        this.speedIndex = 0;
+        this.context.speed = this.context.speedList[this.speedIndex];
     }
 }
