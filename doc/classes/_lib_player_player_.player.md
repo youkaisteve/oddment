@@ -1,4 +1,4 @@
-[oddment - v0.0.25](../README.md) › [Globals](../globals.md) › ["lib/player/player"](../modules/_lib_player_player_.md) › [Player](_lib_player_player_.player.md)
+[oddment - v0.0.26](../README.md) › [Globals](../globals.md) › ["lib/player/player"](../modules/_lib_player_player_.md) › [Player](_lib_player_player_.player.md)
 
 # Class: Player
 
@@ -39,7 +39,7 @@
 
 \+ **new Player**(`playerOption?`: [PlayerOption](../interfaces/_lib_player_player_option_.playeroption.md)): *[Player](_lib_player_player_.player.md)*
 
-*Defined in [lib/player/player.ts:8](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L8)*
+*Defined in [lib/player/player.ts:8](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L8)*
 
 **Parameters:**
 
@@ -55,7 +55,7 @@ Name | Type |
 
 • **context**: *[PlayerContext](../interfaces/_lib_player_context_.playercontext.md)*
 
-*Defined in [lib/player/player.ts:5](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L5)*
+*Defined in [lib/player/player.ts:5](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L5)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **playerOption**: *[PlayerOption](../interfaces/_lib_player_player_option_.playeroption.md)*
 
-*Defined in [lib/player/player.ts:8](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L8)*
+*Defined in [lib/player/player.ts:8](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L8)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **speedIndex**: *number* = 0
 
-*Defined in [lib/player/player.ts:7](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L7)*
+*Defined in [lib/player/player.ts:7](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L7)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **timer**: *any*
 
-*Defined in [lib/player/player.ts:6](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L6)*
+*Defined in [lib/player/player.ts:6](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L6)*
 
 ## Methods
 
@@ -87,7 +87,7 @@ ___
 
 ▸ **changeOption**(`playerOption`: [PlayerOption](../interfaces/_lib_player_player_option_.playeroption.md)): *void*
 
-*Defined in [lib/player/player.ts:18](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L18)*
+*Defined in [lib/player/player.ts:18](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L18)*
 
 重新设置选项
 
@@ -105,7 +105,7 @@ ___
 
 ▸ **handleContext**(): *void*
 
-*Defined in [lib/player/player.ts:116](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L116)*
+*Defined in [lib/player/player.ts:116](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L116)*
 
 **Returns:** *void*
 
@@ -115,7 +115,7 @@ ___
 
 ▸ **pause**(): *void*
 
-*Defined in [lib/player/player.ts:46](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L46)*
+*Defined in [lib/player/player.ts:45](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L45)*
 
 暂停
 
@@ -127,7 +127,7 @@ ___
 
 ▸ **play**(): *void*
 
-*Defined in [lib/player/player.ts:100](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L100)*
+*Defined in [lib/player/player.ts:99](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L99)*
 
 播放
 
@@ -139,7 +139,7 @@ ___
 
 ▸ **resetContext**(): *void*
 
-*Defined in [lib/player/player.ts:139](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L139)*
+*Defined in [lib/player/player.ts:139](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L139)*
 
 **Returns:** *void*
 
@@ -149,7 +149,7 @@ ___
 
 ▸ **resume**(): *void*
 
-*Defined in [lib/player/player.ts:58](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L58)*
+*Defined in [lib/player/player.ts:57](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L57)*
 
 恢复，暂停后使用
 
@@ -161,7 +161,7 @@ ___
 
 ▸ **setOption**(`playerOption`: [PlayerOption](../interfaces/_lib_player_player_option_.playeroption.md)): *void*
 
-*Defined in [lib/player/player.ts:124](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L124)*
+*Defined in [lib/player/player.ts:124](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L124)*
 
 设置选项
 
@@ -179,7 +179,7 @@ ___
 
 ▸ **slowDown**(): *void*
 
-*Defined in [lib/player/player.ts:89](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L89)*
+*Defined in [lib/player/player.ts:88](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L88)*
 
 减速，最低减到一倍速，不能慢放
 
@@ -191,7 +191,7 @@ ___
 
 ▸ **speedUp**(): *void*
 
-*Defined in [lib/player/player.ts:77](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L77)*
+*Defined in [lib/player/player.ts:76](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L76)*
 
 加速
 
@@ -203,7 +203,7 @@ ___
 
 ▸ **start**(`blocker?`: function): *Promise‹void›*
 
-*Defined in [lib/player/player.ts:27](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L27)*
+*Defined in [lib/player/player.ts:27](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L27)*
 
 开始
 
@@ -223,7 +223,7 @@ ___
 
 ▸ **stop**(): *void*
 
-*Defined in [lib/player/player.ts:69](https://github.com/youkaisteve/oddment/blob/64b3024/lib/player/player.ts#L69)*
+*Defined in [lib/player/player.ts:68](https://github.com/youkaisteve/oddment/blob/6db564f/lib/player/player.ts#L68)*
 
 停止
 
