@@ -81,6 +81,7 @@ export default class Player {
             this.speedIndex++;
         }
         this.context.speed = this.context.speedList[this.speedIndex];
+        this.handleContext();
     }
     /**
      * 减速，最低减到一倍速，不能慢放
@@ -92,6 +93,7 @@ export default class Player {
         }
         this.speedIndex--;
         this.context.speed = this.context.speedList[this.speedIndex];
+        this.handleContext();
     }
     /**
      * 播放
