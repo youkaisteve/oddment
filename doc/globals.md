@@ -1,6 +1,6 @@
-[oddment - v0.0.22](README.md) › [Globals](globals.md)
+[oddment - v0.0.23](README.md) › [Globals](globals.md)
 
-# oddment - v0.0.22
+# oddment - v0.0.23
 
 ## Index
 
