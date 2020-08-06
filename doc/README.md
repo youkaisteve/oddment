@@ -1,6 +1,6 @@
-[oddment - v0.0.27](README.md) › [Globals](globals.md)
+[oddment - v0.0.28](README.md) › [Globals](globals.md)
 
-# oddment - v0.0.27
+# oddment - v0.0.28
 
 # Cycler
 

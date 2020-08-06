@@ -1,4 +1,4 @@
-[oddment - v0.0.27](../README.md) › [Globals](../globals.md) › ["lib/cycler/cycler"](_lib_cycler_cycler_.md)
+[oddment - v0.0.28](../README.md) › [Globals](../globals.md) › ["lib/cycler/cycler"](_lib_cycler_cycler_.md)
 
 # External module: "lib/cycler/cycler"
 
@@ -18,4 +18,4 @@
 
 • **NEXT**: *unique symbol* =  Symbol('Cycler#Next')
 
-*Defined in [lib/cycler/cycler.ts:3](https://github.com/youkaisteve/oddment/blob/e37a8c2/lib/cycler/cycler.ts#L3)*
+*Defined in [lib/cycler/cycler.ts:3](https://github.com/youkaisteve/oddment/blob/e5d31ee/lib/cycler/cycler.ts#L3)*
