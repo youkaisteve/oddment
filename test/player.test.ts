@@ -3,7 +3,7 @@ import { expect } from 'chai';
 let context_copy;
 let context;
 const handler = function (ctx) {
-    console.log(ctx.current, ctx.status);
+    console.log(`ctx.current:${ctx.current}, ctx.status:${ctx.status}`);
     context = ctx;
     context_copy = { ...ctx };
 };

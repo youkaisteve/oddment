@@ -30,7 +30,6 @@ export default class Player {
             return;
         }
         this.context.status = 1;
-        this.playerOption.handler(this.context);
 
         const blockResult = blocker ? await blocker() : true;
         if (blockResult) {
@@ -102,6 +101,7 @@ export default class Player {
         this.timer = setInterval(() => {
             if (this.context.current === this.context.total) {
                 this.resetContext();
+                clearInterval(this.timer);
                 return;
             }
             if (this.context.current + this.context.speed >= this.context.total) {
