@@ -112,7 +112,7 @@ export default class Player {
                 this.context.current += this.context.speed;
             }
             this.handleContext({ isPlay: true });
-        }, this.context.speed * this.context.interval * 1000);
+        }, this.context.interval * 1000);
     }
 
     private handleContext(extend?: object) {

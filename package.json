@@ -2,8 +2,11 @@
     "name": "oddment",
     "version": "0.0.29",
     "description": "oddment for variable requirement",
-    "main": "index.js",
-    "types": "index.d.ts",
+    "files": [
+        "build"
+    ],
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
     "scripts": {
         "test": "mocha -r ts-node/register test/*.test.ts",
         "commit": "git cz",
@@ -11,7 +14,7 @@
         "build": "rm -rf ./build && tsc -p tsconfig.prod.json",
         "doc": "rm -rf ./doc && npx typedoc --module commonjs --target es5 --experimentalDecorators --plugin typedoc-plugin-markdown --out ./doc ./index.ts && git commit -am \"docs(api): update api doc\" && git push",
         "release": "npm run doc && standard-version && git push --follow-tags",
-        "pub": "npm run build && cp package.json ./build/ && cp README.md ./build/ && cd build && npm publish && cd ..",
+        "pub": "npm run build && npm publish",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md && git commit -am \"docs(changelog): update\" && git push"
     },
     "standard-version": {
