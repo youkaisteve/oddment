@@ -1,4 +1,4 @@
-[oddment - v0.0.28](../README.md) › [Globals](../globals.md) › ["lib/player/player_option"](../modules/_lib_player_player_option_.md) › [PlayerOption](_lib_player_player_option_.playeroption.md)
+[oddment - v0.0.29](../README.md) › [Globals](../globals.md) › ["lib/player/player_option"](../modules/_lib_player_player_option_.md) › [PlayerOption](_lib_player_player_option_.playeroption.md)
 
 # Interface: PlayerOption
 
@@ -24,7 +24,7 @@
 
 • **handler**: *function*
 
-*Defined in [lib/player/player_option.ts:26](https://github.com/youkaisteve/oddment/blob/969c7ac/lib/player/player_option.ts#L26)*
+*Defined in [lib/player/player_option.ts:26](https://github.com/youkaisteve/oddment/blob/69633c3/lib/player/player_option.ts#L26)*
 
 播放回调
 
@@ -44,7 +44,7 @@ ___
 
 • **interval**? : *number*
 
-*Defined in [lib/player/player_option.ts:10](https://github.com/youkaisteve/oddment/blob/969c7ac/lib/player/player_option.ts#L10)*
+*Defined in [lib/player/player_option.ts:10](https://github.com/youkaisteve/oddment/blob/69633c3/lib/player/player_option.ts#L10)*
 
 间隔，秒，默认为1
 
@@ -54,7 +54,7 @@ ___
 
 • **speed**? : *number*
 
-*Defined in [lib/player/player_option.ts:14](https://github.com/youkaisteve/oddment/blob/969c7ac/lib/player/player_option.ts#L14)*
+*Defined in [lib/player/player_option.ts:14](https://github.com/youkaisteve/oddment/blob/69633c3/lib/player/player_option.ts#L14)*
 
 播放速度（秒），默认为1
 
@@ -64,7 +64,7 @@ ___
 
 • **speedList**? : *number[]*
 
-*Defined in [lib/player/player_option.ts:18](https://github.com/youkaisteve/oddment/blob/969c7ac/lib/player/player_option.ts#L18)*
+*Defined in [lib/player/player_option.ts:18](https://github.com/youkaisteve/oddment/blob/69633c3/lib/player/player_option.ts#L18)*
 
 倍数列表，用于播放速度控制，默认为[1,4,8,16],可定制
 
@@ -74,6 +74,6 @@ ___
 
 • **total**: *number*
 
-*Defined in [lib/player/player_option.ts:22](https://github.com/youkaisteve/oddment/blob/969c7ac/lib/player/player_option.ts#L22)*
+*Defined in [lib/player/player_option.ts:22](https://github.com/youkaisteve/oddment/blob/69633c3/lib/player/player_option.ts#L22)*
 
 总时长(秒)
