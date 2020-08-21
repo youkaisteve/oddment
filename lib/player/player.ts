@@ -118,7 +118,7 @@ export default class Player {
 
     private handleContext(extend?: object) {
         if (extend) {
-            this.playerOption.handler(Object.assign(this.context, extend));
+            this.playerOption.handler({ ...this.context, ...extend });
         } else {
             this.playerOption.handler(this.context);
         }
