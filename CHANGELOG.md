@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.32](https://github.com/youkaisteve/oddment/compare/v0.0.31...v0.0.32) (2020-08-21)
+
+
+### Bug Fixes
+
+* **player:** handle context extend modify ([f5b6389](https://github.com/youkaisteve/oddment/commit/f5b6389665e10bd7000077f42c6cb2bac4f16eff))
+
 ### [0.0.31](https://github.com/youkaisteve/oddment/compare/v0.0.30...v0.0.31) (2020-08-21)
 
 
