@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.31](https://github.com/youkaisteve/oddment/compare/v0.0.30...v0.0.31) (2020-08-21)
+
+
+### Bug Fixes
+
+* **player:** add a flag:finish while playing to the end ([86c2f2a](https://github.com/youkaisteve/oddment/commit/86c2f2aa963f2f80420a78b08b413d0de8329f0e))
+
 ### [0.0.30](https://github.com/youkaisteve/oddment/compare/v0.0.29...v0.0.30) (2020-08-17)
 
 
