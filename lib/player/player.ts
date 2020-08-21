@@ -102,8 +102,9 @@ export default class Player {
         clearInterval(this.timer);
         this.timer = setInterval(() => {
             if (this.context.current === this.context.total) {
-                this.resetContext();
                 clearInterval(this.timer);
+                this.resetContext();
+                this.handleContext({ finish: true });
                 return;
             }
             if (this.context.current + this.context.speed >= this.context.total) {
